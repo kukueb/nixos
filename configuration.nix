@@ -45,7 +45,7 @@
 
   hardware.nvidia = {
     modesetting.enable = true;
-    powerManagement.enable = true;
+    powerManagement.enable = false;
     powerManagement.finegrained = false;
 
     open = false;
@@ -60,6 +60,7 @@
     LIBVA_DRIVER_NAME = "nvidia";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
     WLR_NO_HARDWARE_CURSORS = "1";
+    EDITOR = "nvim";
   };
 
   services.pipewire = {
@@ -81,7 +82,7 @@
 
   # graphical environment
   programs.niri.enable = true;
-  # programs.hyprland.enable = true;
+  programs.hyprland.enable = true;
 
   # programs.firefox.enable = true;
 
@@ -89,6 +90,7 @@
   programs.throne.tunMode.enable = true;
 
   programs.zsh.enable = true;
+
   programs.zsh.ohMyZsh = {
     enable = true;
     theme = "robbyrussell";
@@ -106,6 +108,8 @@
     yazi
     zellij
     git
+    nix-search
+    fastfetch
   ];
 
   hardware.usb-modeswitch.enable = true; # For my usb wifi adapter
@@ -127,12 +131,23 @@
     extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
   };
 
+	# System fonts (optional but recommended)
+	fonts.packages = with pkgs; [
+		rubik
+		nerd-fonts.ubuntu
+		nerd-fonts.jetbrains-mono
+	];
+
 
   # List services that you want to enable:
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
 
   services.xserver.videoDrivers = [ "nvidia" ];
+
+  # illogical impulse
+	# services.geoclue2.enable = true;  # For QtPositioning
+	# services.networkmanager.enable = true;  # For network management
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

@@ -9,7 +9,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    inir.url = "github:snowarch/inir/prerelease";
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
@@ -29,12 +38,15 @@
 
 	          home-manager.users.kukueb = {
 	            imports = [
-		            ./home.nix
+                inputs.niri.homeModules.config
+		            ./home/home.nix
 	            ];
+	            
 	          };
 	        }
 	      ];
       };
     };
+
   };
 }
