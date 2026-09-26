@@ -126,6 +126,7 @@
     git
     nix-search
     fastfetch
+    feh
   ];
 
   hardware.usb-modeswitch.enable = true; # For my usb wifi adapter
