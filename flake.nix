@@ -32,7 +32,7 @@
 	      modules = [
 	        ./hardware-configuration.nix
 	        ./configuration.nix
-	        serpantinum.nixosModules.default
+	        # serpantinum.nixosModules.default
 
 	        home-manager.nixosModules.home-manager
 	        {

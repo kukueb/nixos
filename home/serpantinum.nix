@@ -1,8 +1,8 @@
-{ serpantinum, ... }:
+{ inputs, ... }:
 
 {
   imports = [
-    serpantinum.homeManagerModules.default
+    inputs.serpantinum.homeManagerModules.default
   ];
 
   programs.serpantinum = {
