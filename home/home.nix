@@ -23,6 +23,8 @@
     webcord
     easyeffects
     telegram-desktop
+
+    xwayland-satellite
   ];
 
   programs.kitty = {
