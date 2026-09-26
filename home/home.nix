@@ -22,8 +22,7 @@
     thunar
     webcord
     easyeffects
-    telegram-bin
-    steam
+    telegram-desktop
   ];
 
   programs.kitty = {

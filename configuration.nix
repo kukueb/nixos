@@ -138,6 +138,12 @@
 		nerd-fonts.jetbrains-mono
 	];
 
+  programs.steam = {
+    enable = true;
+    package = pkgs.steam.override {
+      extraArgs = "-system-composer";
+    };
+  }
 
   # List services that you want to enable:
   services.displayManager.sddm.enable = true;
