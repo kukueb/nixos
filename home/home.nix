@@ -37,7 +37,7 @@
       enable_audio_bell = false;
       shell = "zsh";
       background = "#101010";
-      background_opacity = "0.9";
+      background_opacity = "0.7";
     };
   };
 
