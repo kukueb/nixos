@@ -4,8 +4,8 @@ let
   materiaKde = pkgs.fetchFromGitHub {
     owner = "PapirusDevelopmentTeam";
     repo = "materia-kde";
-    rev = "master"; # лучше зафиксировать конкретный commit hash для воспроизводимости
-    sha256 = lib.fakeSha256; # заменить на реальный хэш — nix build подскажет его при первом прогоне
+    rev = "master"; # лучше зафиксировать конкретный commit hash
+    sha256 = lib.fakeSha256; # nix build подскажет реальный хэш
   };
 in
 {
@@ -18,8 +18,8 @@ in
   gtk = {
     enable = true;
     theme = {
-      name = "Materia-dark";
-      package = pkgs.materia-theme; # тот же Material-стиль в GTK, для консистентности
+      name = "Orchis-Dark";
+      package = pkgs.orchis-theme;
     };
     gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
     gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
@@ -41,7 +41,6 @@ in
     theme=Materia-Dark
   '';
 
-  # Настоящий Material Design для QML/Qt Quick приложений (не через Kvantum, а нативно в Qt)
   home.sessionVariables = {
     QT_QUICK_CONTROLS_STYLE = "Material";
     QT_QUICK_CONTROLS_MATERIAL_THEME = "Dark";
