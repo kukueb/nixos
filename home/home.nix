@@ -5,6 +5,7 @@
     ./niri.nix
     ./noctalia.nix
     ./qtgtktheme.nix
+    ./serpantunum.nix
   ];
 
   home.username = "kukueb";
