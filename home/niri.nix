@@ -318,22 +318,22 @@
 
       "Mod+A".action.spawn-sh = "noctalia msg window-switcher";
 
-      "Mod+V".action = {
+      "Mod+V" = {
         hotkey-overlay.title = "Open clipboard history";
-        spawn-sh = "noctalia msg panel-open clipboard";
+        action.spawn-sh = "noctalia msg panel-open clipboard";
       };
 
-      "Mod+D".action = {
+      "Mod+D" = {
         hotkey-overlay.title = "Open app launcher";
-        spawn-sh = "noctalia msg panel-open launcher";
+        action.spawn-sh = "noctalia msg panel-open launcher";
       };
-      "Mod+Shift+W".action = {
+      "Mod+Shift+W" = {
         hotkey-overlay.title = "Open wallpaper selector";
-        spawn-sh = "noctalia msg panel-open wallpaper";
+        action.spawn-sh = "noctalia msg panel-open wallpaper";
       };
-      "Mod+T".action = {
+      "Mod+T" = {
         hotkey-overlay.title = "Open tray drawer";
-        spawn-sh = "noctalia msg panel-open tray-drawer";
+        action.spawn-sh = "noctalia msg panel-open tray-drawer";
       };
     };
   };
