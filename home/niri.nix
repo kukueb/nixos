@@ -7,6 +7,7 @@
     spawn-at-startup = [
       { command = ["noctalia"]; }
       { command = ["xwayland-satellite"]; }
+      { command = ["gpu-screen-recorder-ui"]; }
     ];
 
     # ---------------------------------------------------------------------
