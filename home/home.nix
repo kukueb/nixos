@@ -25,6 +25,8 @@
     telegram-desktop
 
     xwayland-satellite
+
+    handbrake
   ];
 
   programs.kitty = {
