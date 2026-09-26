@@ -317,14 +317,15 @@
       "Mod+Shift+P".action.power-off-monitors = { };
 
       "Mod+A".action.spawn-sh = "noctalia msg window-switcher";
-      "Mod+V".action.spawn-sh = "noctalia msg panel-open clipboard";
+
+      "Mod+V".action = {
+        hotkey-overlay.title = "Open clipboard history";
+        spawn-sh = "noctalia msg panel-open clipboard";
+      };
+
       "Mod+D".action = {
         hotkey-overlay.title = "Open app launcher";
         spawn-sh = "noctalia msg panel-open launcher";
-      };
-      "Mod+Shift+W".action = {
-        hotkey-overlay.title = "Open wallpaper selector";
-        spawn-sh = "noctalia msg panel-open wallpaper";
       };
       "Mod+Shift+W".action = {
         hotkey-overlay.title = "Open wallpaper selector";
