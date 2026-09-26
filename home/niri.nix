@@ -136,10 +136,6 @@
         hotkey-overlay.title = "Open a Terminal: kitty";
         action.spawn = "kitty";
       };
-      "Mod+D" = {
-        hotkey-overlay.title = "Run an Application: fuzzel";
-        action.spawn = "fuzzel";
-      };
       "Super+Alt+L" = {
         hotkey-overlay.title = "Lock the Screen: swaylock";
         action.spawn = "swaylock";
@@ -321,6 +317,23 @@
       "Mod+Shift+P".action.power-off-monitors = { };
 
       "Mod+A".action.spawn-sh = "noctalia msg window-switcher";
+      "Mod+V".action.spawn-sh = "noctalia msg panel-open clipboard";
+      "Mod+D".action = {
+        hotkey-overlay.title = "Open app launcher";
+        spawn-sh = "noctalia msg panel-open launcher";
+      };
+      "Mod+Shift+W".action = {
+        hotkey-overlay.title = "Open wallpaper selector";
+        spawn-sh = "noctalia msg panel-open wallpaper";
+      };
+      "Mod+Shift+W".action = {
+        hotkey-overlay.title = "Open wallpaper selector";
+        spawn-sh = "noctalia msg panel-open wallpaper";
+      };
+      "Mod+T".action = {
+        hotkey-overlay.title = "Open tray drawer";
+        spawn-sh = "noctalia msg panel-open tray-drawer";
+      };
     };
   };
 }
