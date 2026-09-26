@@ -126,10 +126,11 @@
     git
     nix-search
     fastfetch
-    feh
+    feh  
+    kdePackages.dolphin
+    kdePackages.breeze    # Recommended for proper styling/icons
+    kdePackages.qtsvg     # Fixes missing/blank icons
   ];
-
-  programs.dolphin.enable = true;
 
   hardware.usb-modeswitch.enable = true; # For my usb wifi adapter
   hardware.enableRedistributableFirmware = true;
