@@ -7,7 +7,6 @@
     spawn-at-startup = [
       { command = ["noctalia"]; }
       { command = ["xwayland-satellite"]; }
-      { command = ["gpu-screen-recorder-ui"]; }
     ];
 
     # ---------------------------------------------------------------------
@@ -341,6 +340,11 @@
       "Mod+E" = {
         hotkey-overlay.title = "Open thunar";
         action.spawn-sh = "thunar";
+      };
+
+      "Mod+C" = {
+        hotkey-overlay.title = "Open calculator";
+        action.spawn-sh = "noctalia msg panel-toggle yuuto/calculator:panel";
       };
     };
   };
