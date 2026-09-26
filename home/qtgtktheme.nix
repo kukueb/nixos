@@ -5,7 +5,7 @@ let
     owner = "PapirusDevelopmentTeam";
     repo = "materia-kde";
     rev = "master"; # лучше зафиксировать конкретный commit hash
-    sha256 = lib.fakeSha256; # nix build подскажет реальный хэш
+    sha256 = "sha256-tZWEVq2VYIvsQyFyMp7VVU1INbO7qikpQs4mYwghAVM=";
   };
 in
 {
