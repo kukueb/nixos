@@ -342,7 +342,7 @@
         action.spawn-sh = "thunar";
       };
 
-      "Mod+C" = {
+      "Mod+Shift+C" = {
         hotkey-overlay.title = "Open calculator";
         action.spawn-sh = "noctalia msg panel-toggle yuuto/calculator:panel";
       };
