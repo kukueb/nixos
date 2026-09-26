@@ -336,6 +336,11 @@
         hotkey-overlay.title = "Open tray drawer";
         action.spawn-sh = "noctalia msg panel-open tray-drawer";
       };
+
+      "Mod+E" = {
+        hotkey-overlay.title = "Open thunar";
+        action.spawn-sh = "thunar";
+      };
     };
   };
 }

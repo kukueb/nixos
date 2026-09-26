@@ -71,11 +71,11 @@
   # auto mount
   fileSystems."/mnt/xfspart" = {
     device = "/dev/disk/by-uuid/f4d62fb5-fd19-4a89-b289-93680aecd6d2";
-    fsType = "xfs"; # Укажите вашу файловую систему (ntfs3, btrfs, ext4 и т.д.)
-    options = [ 
-      "users"          # Позволяет обычным пользователям монтировать/размонтировать
-      "nofail"         # Не останавливать загрузку ПК, если диск отсутствует
-      "x-systemd.automount" # Монтировать на лету при первом обращении к папке
+    fsType = "xfs"; 
+    options = [
+      "users"
+      "nofail"
+      "x-systemd.automount"
     ];
   };
 
