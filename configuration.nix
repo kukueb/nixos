@@ -127,8 +127,9 @@
     nix-search
     fastfetch
     feh
-    dolphin
   ];
+
+  programs.dolphin.enable = true;
 
   hardware.usb-modeswitch.enable = true; # For my usb wifi adapter
   hardware.enableRedistributableFirmware = true;
