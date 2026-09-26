@@ -36,6 +36,8 @@
     settings = {
       enable_audio_bell = false;
       shell = "zsh";
+      background = "#303030";
+      background_opacity = "0.9";
     };
   };
 
