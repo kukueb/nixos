@@ -68,6 +68,17 @@
     pulse.enable = true;
   };
 
+  # auto mount
+  fileSystems."/mnt/xfspart/" = {
+    device = "/dev/disk/by-uuid/f4d62fb5-fd19-4a89-b289-93680aecd6d2";
+    fsType = "xfs"; # Укажите вашу файловую систему (ntfs3, btrfs, ext4 и т.д.)
+    options = [ 
+      "users"          # Позволяет обычным пользователям монтировать/размонтировать
+      "nofail"         # Не останавливать загрузку ПК, если диск отсутствует
+      "x-systemd.automount" # Монтировать на лету при первом обращении к папке
+    ];
+  };
+
   users.users.kukueb = {
     isNormalUser = true;
     description = "kukueb";
@@ -115,7 +126,6 @@
   hardware.usb-modeswitch.enable = true; # For my usb wifi adapter
   hardware.enableRedistributableFirmware = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
