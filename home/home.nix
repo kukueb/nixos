@@ -27,6 +27,7 @@
     xwayland-satellite
 
     handbrake
+    vlc
   ];
 
   programs.kitty = {
