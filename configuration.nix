@@ -127,6 +127,7 @@
     nix-search
     fastfetch
     feh
+    dolphin
   ];
 
   hardware.usb-modeswitch.enable = true; # For my usb wifi adapter
