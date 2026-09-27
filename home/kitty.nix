@@ -2,7 +2,7 @@
 {
   
   imports = [
-    inputs.homeManagerModules.kitty.default
+    inputs.homeManager.kitty.default
   ];
 
   programs.kitty = {
