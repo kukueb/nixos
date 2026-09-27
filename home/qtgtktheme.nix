@@ -14,7 +14,7 @@ in
     # platformTheme.name = "qtct"; # было "kvantum" — невалидное значение
     platformTheme.name = "qt6ct"; # было "kvantum" — невалидное значение
     style.name = "breeze";
-    colorSceme.name = "noctalia";
+    colorScheme.name = "noctalia";
   };
 
   # xdg.configFile."Kvantum/Materia".source = "${materiaKde}/Kvantum/Materia";
