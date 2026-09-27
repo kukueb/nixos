@@ -7,6 +7,7 @@
     ./qtgtktheme.nix
     ./serpantinum.nix
     ./kitty.nix
+    ./cursor.nix
   ];
 
   home.username = "kukueb";
