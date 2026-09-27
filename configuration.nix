@@ -122,6 +122,9 @@
     tldr
     fzf
     ripgrep
+
+    7z
+    unzip
   ];
 
   programs.dconf.enable = true;
