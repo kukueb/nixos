@@ -123,7 +123,7 @@
     fzf
     ripgrep
 
-    pkgs.7zip
+    7zip
     unzip
     xarchiver
   ];
