@@ -1,10 +1,5 @@
-{ inputs, ... }:
+{ ... }:
 {
-  
-  imports = [
-    inputs.homeManager.kitty.default
-  ];
-
   programs.kitty = {
     enable = true;
     settings = {
