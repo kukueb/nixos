@@ -125,6 +125,7 @@
 
     pkgs.7zip
     unzip
+    xarchiver
   ];
 
   programs.dconf.enable = true;
