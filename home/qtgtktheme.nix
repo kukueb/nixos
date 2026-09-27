@@ -1,35 +1,15 @@
 { config, pkgs, lib, ... }:
 
-let
-  materiaKde = pkgs.fetchFromGitHub {
-    owner = "PapirusDevelopmentTeam";
-    repo = "materia-kde";
-    rev = "master"; # лучше зафиксировать commit hash
-    sha256 = "sha256-tZWEVq2VYIvsQyFyMp7VVU1INbO7qikpQs4mYwghAVM=";
-  };
-in
 {
   qt = {
     enable = true;
-    # platformTheme.name = "qtct"; # было "kvantum" — невалидное значение
-    platformTheme.name = "qt6ct"; # было "kvantum" — невалидное значение
+    platformTheme.name = "qt6ct";
     style.name = "breeze";
-    colorScheme.name = "noctalia";
   };
 
-  # xdg.configFile."Kvantum/Materia".source = "${materiaKde}/Kvantum/Materia";
-  # xdg.configFile."Kvantum/Materia-Dark".source = "${materiaKde}/Kvantum/Materia-Dark";
-  # xdg.configFile."Kvantum/Materia-Light".source = "${materiaKde}/Kvantum/Materia-Light";
-  #
-  # xdg.configFile."Kvantum/kvantum.kvconfig".text = ''
-  #   [General]
-  #   theme=Materia-Dark
-  # '';
-
-  home.packages = with pkgs; [
-    libsForQt5.qtstyleplugin-kvantum
-    qt6Packages.qtstyleplugin-kvantum
-    libsForQt5.qt5ct
-    qt6Packages.qt6ct
-  ];
+  xdg.configFile."qt6ct/qt6ct.conf".text = ''
+    [Appearance]
+    style=Breeze
+    color_scheme_path=/home/kukueb/.config/qt6ct/colors/noctalia.conf
+  '';
 }
