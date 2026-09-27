@@ -159,7 +159,7 @@
       pkgs.xdg-desktop-portal-gnome 
       pkgs.xdg-desktop-portal-gtk 
     ];
-    config.niri.default = ["gnome" "gtk"]
+    config.niri.default = ["gnome" "gtk"];
   };
 
 	# System fonts (optional but recommended)
