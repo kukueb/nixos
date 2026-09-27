@@ -129,9 +129,6 @@
     nix-search
     fastfetch
     feh  
-    kdePackages.dolphin
-    kdePackages.breeze    # Recommended for proper styling/icons
-    kdePackages.qtsvg     # Fixes missing/blank icons
 
     dconf
     adw-gtk3
