@@ -133,6 +133,8 @@
     dconf
     adw-gtk3
     gnome-themes-extra
+
+    lazygit
   ];
 
   programs.dconf.enable = true;
