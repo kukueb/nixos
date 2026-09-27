@@ -26,11 +26,6 @@
     easyeffects
     telegram-desktop
 
-    kdePackages.dolphin
-    kdePackages.breeze    # Recommended for proper styling/icons
-    kdePackages.qtsvg     # Fixes missing/blank icons
-    kdePackages.plasma-integration
-
     xwayland-satellite
 
     handbrake
