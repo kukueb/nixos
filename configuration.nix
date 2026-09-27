@@ -120,6 +120,8 @@
 
     lazygit
     tldr
+    fzf
+    ripgrep
   ];
 
   programs.dconf.enable = true;
