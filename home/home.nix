@@ -30,6 +30,8 @@
 
     handbrake
     vlc
+
+    qpwgraph
   ];
 
   programs.zsh = {
