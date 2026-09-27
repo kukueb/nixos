@@ -132,7 +132,13 @@
     kdePackages.dolphin
     kdePackages.breeze    # Recommended for proper styling/icons
     kdePackages.qtsvg     # Fixes missing/blank icons
+
+    dconf
+    adw-gtk3
+    gnome-themes-extra
   ];
+
+  programs.dconf.enable = true;
 
   hardware.usb-modeswitch.enable = true; # For my usb wifi adapter
   hardware.enableRedistributableFirmware = true;
@@ -149,7 +155,11 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
+    extraPortals = [ 
+      pkgs.xdg-desktop-portal-gnome 
+      pkgs.xdg-desktop-portal-gtk 
+    ];
+    config.niri.default = ["gnome" "gtk"]
   };
 
 	# System fonts (optional but recommended)
@@ -207,7 +217,7 @@
   # and migrated your data accordingly.
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-  system.stateVersion = "26.05"; # Did you read the comment?
+  system.stateVersion = "26.11"; # Did you read the comment?
 
 }
 

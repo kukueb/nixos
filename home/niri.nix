@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 {
   programs.niri.package = pkgs.niri;
+
+
   programs.niri.settings = {
     prefer-no-csd = true;
 
