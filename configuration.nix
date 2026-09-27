@@ -123,7 +123,7 @@
     fzf
     ripgrep
 
-    7zip
+    _7zip
     unzip
     xarchiver
   ];
