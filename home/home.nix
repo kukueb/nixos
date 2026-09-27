@@ -6,6 +6,7 @@
     ./noctalia.nix
     ./qtgtktheme.nix
     ./serpantinum.nix
+    ./kitty.nix
   ];
 
   home.username = "kukueb";
@@ -30,21 +31,6 @@
     handbrake
     vlc
   ];
-
-  programs.kitty = {
-    enable = true;
-    settings = {
-      enable_audio_bell = false;
-      shell = "zsh";
-      background = "#101010";
-      background_opacity = "0.7";
-    };
-  };
-
-  # programs.noctalia = {
-  #   enable = true;
-  #   # settings = {};
-  # };
 
   programs.zsh = {
     enable = true;
