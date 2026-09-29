@@ -33,6 +33,8 @@
     vlc
 
     qpwgraph
+
+    prismlauncher
   ];
 
   programs.zsh = {
