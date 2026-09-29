@@ -71,7 +71,7 @@
       "video"
       "audio"
     ];
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 
   # graphical environment
