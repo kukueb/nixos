@@ -15,7 +15,10 @@
 
   home.packages = with pkgs; [
     kitty
+
     firefox
+    zen-browser
+
     fuzzel
     waybar
     mako
