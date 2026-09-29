@@ -5,6 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./modules/dev-tools.nix
+      ./modules/fish.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
