@@ -8,6 +8,7 @@
     ./serpantinum.nix
     ./kitty.nix
     ./cursor.nix
+    ./zen-browser.nix
   ];
 
   home.username = "kukueb";
