@@ -3,7 +3,7 @@
   programs.yazi = {
     enable = true;
     settings = {
-      manager.show_hidden = true;
+      manager.yazi.show_hidden = true;
     };
   };
 }
