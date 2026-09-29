@@ -18,7 +18,6 @@
     kitty
 
     firefox
-    zen-browser
 
     fuzzel
     waybar
