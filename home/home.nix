@@ -40,7 +40,7 @@
     prismlauncher
 
     libreoffice
-    qbittorent
+    qbittorrent
   ];
 
   programs.zsh = {
