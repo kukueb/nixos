@@ -5,7 +5,7 @@
   qt = {
     enable = true;
     platformTheme.name = "kde";
-    style.name = "breeze";
+    style.name = "adwaita-dark";
   };
 
   home.packages = with pkgs; [
