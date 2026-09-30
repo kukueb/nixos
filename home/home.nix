@@ -38,6 +38,8 @@
     qpwgraph
 
     prismlauncher
+
+    libreoffice
   ];
 
   programs.zsh = {
