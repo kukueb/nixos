@@ -164,8 +164,6 @@
 
   # List of services
   services = {
-    displayManager.sddm.enable = true;
-    displayManager.sddm.wayland.enable = true;
 
     xserver.videoDrivers = [ "nvidia" ];
 
@@ -174,6 +172,12 @@
       pulse.enable = true;
     };
 
+  };
+  
+  # sddm
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
   };
 
   # illogical impulse
