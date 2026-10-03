@@ -7,6 +7,7 @@
       ./modules/dev-tools.nix
       ./modules/fish.nix
       ./modules/yazi.nix
+      ./modules/git.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -112,7 +113,6 @@
     btop
     yazi
     zellij
-    git
     nix-search
     fastfetch
     feh  
