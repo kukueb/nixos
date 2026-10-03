@@ -126,6 +126,7 @@
     fzf
     ripgrep
     fd
+    file
 
     _7zz
     unzip
