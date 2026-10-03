@@ -10,6 +10,7 @@
     ./cursor.nix
     ./zen-browser.nix
     ./godot.nix
+    ./blender.nix
   ];
 
   home.username = "kukueb";
