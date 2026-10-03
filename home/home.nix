@@ -9,6 +9,7 @@
     ./kitty.nix
     ./cursor.nix
     ./zen-browser.nix
+    ./godot.nix
   ];
 
   home.username = "kukueb";
