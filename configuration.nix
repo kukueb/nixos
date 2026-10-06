@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ 
+    [
       ./hardware-configuration.nix
       ./modules/dev-tools.nix
       ./modules/fish.nix
@@ -57,7 +57,7 @@
   # auto mount
   fileSystems."/mnt/xfspart" = {
     device = "/dev/disk/by-uuid/f4d62fb5-fd19-4a89-b289-93680aecd6d2";
-    fsType = "xfs"; 
+    fsType = "xfs";
     options = [
       "users"
       "nofail"
@@ -85,6 +85,8 @@
     xwayland.enable = true;
   };
 
+  programs.kdeconnect.enable = true;
+
   # programs.firefox.enable = true;
 
   programs.throne.enable = true;
@@ -96,8 +98,8 @@
     enable = true;
     theme = "robbyrussell";
     plugins = [
-    	"git"
-    	"sudo"
+      "git"
+      "sudo"
     ];
   };
 
@@ -115,7 +117,7 @@
     zellij
     nix-search
     fastfetch
-    feh  
+    feh
 
     dconf
     adw-gtk3
@@ -142,19 +144,19 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ 
-      pkgs.xdg-desktop-portal-gnome 
-      pkgs.xdg-desktop-portal-gtk 
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gnome
+      pkgs.xdg-desktop-portal-gtk
     ];
-    config.niri.default = ["gnome" "gtk"];
+    config.niri.default = [ "gnome" "gtk" ];
   };
 
-	# System fonts
-	fonts.packages = with pkgs; [
-		rubik
-		nerd-fonts.ubuntu
-		nerd-fonts.jetbrains-mono
-	];
+  # System fonts
+  fonts.packages = with pkgs; [
+    rubik
+    nerd-fonts.ubuntu
+    nerd-fonts.jetbrains-mono
+  ];
 
   programs.steam = {
     enable = true;
@@ -174,7 +176,7 @@
     };
 
   };
-  
+
   # sddm
   services.displayManager.sddm = {
     enable = true;
@@ -182,8 +184,8 @@
   };
 
   # illogical impulse
-	# services.geoclue2.enable = true;  # For QtPositioning
-	# services.networkmanager.enable = true;  # For network management
+  # services.geoclue2.enable = true;  # For QtPositioning
+  # services.networkmanager.enable = true;  # For network management
 
   system.stateVersion = "26.11";
 
