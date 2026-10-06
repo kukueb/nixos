@@ -7,9 +7,10 @@
     prefer-no-csd = true;
 
     spawn-at-startup = [
-      { command = ["noctalia"]; }
-      { command = ["xwayland-satellite"]; }
-      { command = ["kdeconnect-indicator"]; }
+      { command = [ "noctalia" ]; }
+      { command = [ "xwayland-satellite" ]; }
+      { command = [ "kdeconnect-indicator" ]; }
+      { command = [ "Throne" ]; }
     ];
 
     # ---------------------------------------------------------------------
@@ -102,7 +103,7 @@
     # ---------------------------------------------------------------------
     window-rules = [
       {
-        matches = [ { app-id = "^org\\.wezfurlong\\.wezterm$"; } ];
+        matches = [{ app-id = "^org\\.wezfurlong\\.wezterm$"; }];
         default-column-width = { };
       }
       {
@@ -110,6 +111,12 @@
           { app-id = "firefox$"; title = "^Picture-in-Picture$"; }
         ];
         open-floating = true;
+      }
+      {
+        matches = [
+          { app-id = "throne$"; }
+        ];
+        open-on-output = "HDMI-A-1";
       }
 
       # {
