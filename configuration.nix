@@ -134,6 +134,9 @@
     _7zz
     unzip
     xarchiver
+
+    undo
+    jj
   ];
 
   programs.dconf.enable = true;
