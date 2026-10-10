@@ -135,8 +135,7 @@
     unzip
     xarchiver
 
-    undo
-    jj
+    jujutsu
   ];
 
   programs.dconf.enable = true;
