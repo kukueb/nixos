@@ -44,6 +44,8 @@
 
     libreoffice
     qbittorrent
+
+    playerctl
   ];
 
   programs.zsh = {
