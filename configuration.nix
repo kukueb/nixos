@@ -8,6 +8,7 @@
       ./modules/fish.nix
       ./modules/yazi.nix
       ./modules/git.nix
+      ./modules/arduino.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

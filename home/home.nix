@@ -11,6 +11,7 @@
     ./zen-browser.nix
     ./godot.nix
     ./blender.nix
+    ./vscode.nix
   ];
 
   home.username = "kukueb";
