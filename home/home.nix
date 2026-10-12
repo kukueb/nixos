@@ -12,6 +12,7 @@
     ./godot.nix
     ./blender.nix
     ./vscode.nix
+    ./antigravity.nix
   ];
 
   home.username = "kukueb";
