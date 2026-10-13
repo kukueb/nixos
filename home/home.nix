@@ -13,6 +13,7 @@
     ./blender.nix
     ./vscode.nix
     ./antigravity.nix
+    ./krita.nix
   ];
 
   home.username = "kukueb";

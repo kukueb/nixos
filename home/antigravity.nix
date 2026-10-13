@@ -2,6 +2,6 @@
 {
   home.packages = with pkgs; [
     antigravity-cli
-    antigravity-fhs
+    antigravity-ide-fhs
   ];
 }
