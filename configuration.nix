@@ -187,6 +187,8 @@
       };
     };
 
+    flatpak.enable = true;
+
   };
 
   # sddm
