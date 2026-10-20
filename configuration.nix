@@ -168,6 +168,8 @@
     };
   };
 
+  programs.localsend.enable = true;
+
   # List of services
   services = {
 
