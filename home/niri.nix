@@ -11,6 +11,7 @@
       { command = [ "xwayland-satellite" ]; }
       { command = [ "kdeconnect-indicator" ]; }
       { command = [ "Throne" ]; }
+      { command = [ "/etc/nixos/niri/niri-zoomd" ]; }
     ];
 
     # ---------------------------------------------------------------------
@@ -248,8 +249,8 @@
 
       "Mod+WheelScrollDown" = { cooldown-ms = 150; action.focus-workspace-down = { }; };
       "Mod+WheelScrollUp" = { cooldown-ms = 150; action.focus-workspace-up = { }; };
-      "Mod+Ctrl+WheelScrollDown" = { cooldown-ms = 150; action.move-column-to-workspace-down = { }; };
-      "Mod+Ctrl+WheelScrollUp" = { cooldown-ms = 150; action.move-column-to-workspace-up = { }; };
+      # "Mod+Ctrl+WheelScrollDown" = { cooldown-ms = 150; action.move-column-to-workspace-down = { }; };
+      # "Mod+Ctrl+WheelScrollUp" = { cooldown-ms = 150; action.move-column-to-workspace-up = { }; };
 
       "Mod+WheelScrollRight".action.focus-column-right = { };
       "Mod+WheelScrollLeft".action.focus-column-left = { };
@@ -355,6 +356,23 @@
       "Mod+Shift+C" = {
         hotkey-overlay.title = "Open calculator";
         action.spawn-sh = "noctalia msg panel-toggle yuuto/calculator:panel";
+      };
+
+      "Mod+Alt+WheelScrollUp" = {
+        hotkey-overlay.title = "Niri zoom in";
+        action.spawn-sh = "/etc/nixos/niri/niri-zoomctl in";
+        cooldown-ms = 0;
+      };
+
+      "Mod+Alt+WheelScrollDown" = {
+        hotkey-overlay.title = "Niri zoom out";
+        action.spawn-sh = "/etc/nixos/niri/niri-zoomctl out";
+        cooldown-ms = 0;
+      };
+
+      "Ctrl+Mod+Z" = {
+        hotkey-overlay.title = "Niri zoom reset";
+        action.spawn-sh = "/etc/nixos/niri/niri-zoomctl reset";
       };
     };
   };
