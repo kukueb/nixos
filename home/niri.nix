@@ -315,6 +315,7 @@
       "Mod+W".action.toggle-column-tabbed-display = { };
 
       "Print".action.spawn-sh = "noctalia msg screenshot-region";
+      "Mod+Shift+S".action.spawn-sh = "noctalia msg screenshot-region";
       "Ctrl+Print".action.spawn-sh = "noctalia msg screenshot-fullscreen";
       "Alt+Print".action.spawn-sh = "noctalia msg screenshot-annotate";
 
