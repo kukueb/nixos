@@ -9,6 +9,7 @@
       ./modules/yazi.nix
       ./modules/git.nix
       ./modules/arduino.nix
+      ./modules/unity.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
